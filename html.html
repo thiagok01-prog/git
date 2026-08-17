@@ -16,6 +16,9 @@
             div{
                 background-color: rgb(100, 100, 155);
             }
+            table, td{border: 1px solid black;
+            border-collapse: collapse;
+        }
         </style>
     </head>
     <body>
@@ -67,8 +70,43 @@
                 <dt>café</dt>
                 <dd>bebida obtida do grão de café.</dd>
             </dl>
+        </section>
 
+        <section>
+            <p>O html fornece suporte a tabelas por meio da tag table, e outras tags como tag definição de linha &lt tr &gt 
+                <i>table row</i>, criação de celular com tag &lt tr &gt <i> table data </i> </p>
 
+                <caption>Churrasco</caption>
+                <table>
+                    <tr>
+                        <td>indice</td><td>nome</td><td>valor</td><td>categoria</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>carne</td>
+                        <td>50,50</td>
+                        <td rowspan="2">carne</td>
+                    </tr>
+                     <tr>
+                        <td>1</td>
+                        <td>carne2</td>
+                        <td>50,50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>refri</td>
+                        <td>30,00</td>
+                        <td>bebida</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>carvão</td>
+                        <td>40,00</td>
+                        <td>outro</td>
+                    </tr>
+                    <td colspan="2" rowspan="1">Total</td>
+                    <td>260,00</td>
+                </table>
         </section>
 
     </body>
