@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport">
         <title>linguagen HTML</title>
-        <style>
+        <style> /** codigo CSS */
             h1{color: blue;}
             span{font-size: 2em;}
             section{
@@ -16,8 +16,9 @@
             div{
                 background-color: rgb(100, 100, 155);
             }
-            table, td{border: 1px solid black;
+            table#sepei,#sepei td, caption,#sepei th{border: 1px solid black;
             border-collapse: collapse;
+            background-color: rgb(200, 160, 100);
         }
         </style>
     </head>
@@ -104,9 +105,52 @@
                         <td>40,00</td>
                         <td>outro</td>
                     </tr>
+                    <tr>
                     <td colspan="2" rowspan="1">Total</td>
                     <td>260,00</td>
+                </td>
                 </table>
+
+                <table id = "sepei">
+                    <caption>SEPEI 2026</caption>
+                    <tr><th>indice</th><th>nome</th><th>idade</th></tr>
+                    <tr><td>1</td><td>exemplo</td> <td>18</td></tr> <!-- tr linha td é celula -->
+                    <tr><td>2</td><td>exemplo1</td><td>19</td></tr> <!-- tr linha td é celula -->
+                    <tr><td>3</td><td>exemplo2</td><td>20</td></tr> <!-- tr linha td é celula -->
+                    <tr><td colspan="2">Total alunos</td><td></td></tr>
+                </table>
+        </section>
+
+        <section>
+            <h1>formulário</h1>
+            <p>As tags de formulário permitem entrada de dado</p>
+
+            <form action="">
+                <label for="inputnome">Nome:</label>
+                <input id="inputnome" type="text">
+
+                <label for="inputTelefone">Telefone:</label>
+                <input id="inputTelefone" type="tel" pattern="^\(d\{2}\)\s\d{4,5}-\d{4}$" >
+                <input type="submit" value="Enviar">
+                
+            </form>
+
+            <form action="https://google.com/search" method="get">
+                <input type="text" name="q">
+                <input type="text" name="bla">
+                <input type="submit">
+            </form>
+
+            <form method="post">
+                <label for="usr">Usuário</label>
+                <input id="usr" type="text" name="usuario">
+
+                <label for="senha">Senha</label>
+                <input type="senha" type="password" name="senha">
+
+                <input type="submit">
+            </form>
+
         </section>
 
     </body>
