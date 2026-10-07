@@ -71,3 +71,22 @@ if (imc<18.5) {
     console.log(i);
     i++;
  }
+
+ //for
+ let i=0;
+ while(i<5){
+    console.log(i);
+    i++;
+ }
+
+ //for
+ for(let i=0;i<5;i++){
+    console.log(i);
+ }
+
+ //arrays
+ let carnesDoChurrasco=["picanha", "costela", "alcatra", "fraldinha"];
+
+ carnesDoChurrasco.forEach((v1) => {
+    console.log(v1 + "index:"+index);
+ })
