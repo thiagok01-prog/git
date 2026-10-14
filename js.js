@@ -52,5 +52,5 @@ console.log(itensChurrasco.filter( (e,i )=>{
 }));
 
 console.log(JSON.stringify(itensChurrasco));
-
 console.log(JSON.parse("[\"bla\" , \"bla1\"]"));
+console.log(array2[1]);
