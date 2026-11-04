@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <title>O que é JavaScript?</title>
+    <h1>O que é JavaScript?</h1>
+    <p id="texto">O JavaScript foi criado com a motivação de tornar a web mais interativa e dinâmica, pois até então os sites eram muito 
+    estaticos, o código pode ser executado pelo servidor ou pelo navegador, a diferença entre eles sendo quem define os recursos 
+    e onde o código é processado, com navegador o código é executado no dispositivo do usuário, enquanto servidor é executado em um 
+    computador separado , também há um mecanismo chamado de sandbox, que executa o código em um local isolado, podendo fazer
+    testes no código em busca de materiais maliciosos sem que afetem o resto do computador. Enfim, há propriedades e metodos que podem 
+    ser acessados atravéz de um objeto raiz chamado window que representa a janela do navegador e o BOM, Browser Object Model entre eles, 
+    pode ser acessado o document, epresenta toda a estrutura da página HTML atual. É através dele que você seleciona elementos da página, 
+    altera textos, estilos ou cria novos componentes visuais como: document.getElementById(), document.querySelector() Fornece acesso ao 
+    console de depuração do navegador. Ele possui diversos métodos úteis para desenvolvedores testarem códigos e inspecionarem dados sem 
+    mexer no visual da página exemplo: console.log(), console.error(), console.dir() alert: É um método do objeto window que exibe uma 
+    caixa de diálogo (popup) nativa do sistema operacional/navegador com uma mensagem e um botão "OK", pausando a execução do script 
+    até que o usuário feche o aviso.</p>
+        <script>
+    console.log("testes");
+
+    alert("hello");
+
+  const agora = new Date();
+  const horaFormatada = agora.toLocaleTimeString('pt-BR');
+  document.getElementById('horaAtual').innerHTML = "Hora atual: ${horaFormatada}";
+    </script>
+</body>
+</html>

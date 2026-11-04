@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form method="get">
+                <input type="submit">
+            </form>
+
+    <script>
+    string = "test";
+    num = 20;
+    bool = true;
+    un = undefined;
+    nulled = null;
+    objeto = { nome: "test", num: 28 };
+    array = [10, 20, 30, 40];
+
+    variaveis = [string, num, bool, objeto, un, nulled];
+
+        container = document.getElementById("resultado");
+
+        variaveis.forEach(variavel => {
+            const p = document.createElement("p");
+            p.textContent = "O tipo do valor [${variavel}] é: ${typeof variavel}";
+            container.appendChild(p);
+        });
+        console.log(num + string);
+        console.log(bool + un);
+        console.log(nulled + objeto);
+        </script>
+</body>
+</html>
