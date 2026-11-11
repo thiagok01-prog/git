@@ -1,0 +1,1 @@
+//Não, pois o PHP roda no servidor web, não é um script sobre um navegador.
