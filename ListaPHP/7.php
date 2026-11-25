@@ -14,7 +14,8 @@
 <?php
 
 if(!isset($_GET['numero'])){
-    exit();}
+    exit();
+    }
     $numero=$_GET['numero'];
 
 function tabuada($n){
